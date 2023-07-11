@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DynamicERP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/petrol.css" />
+  </head>
+  <body>
+    <section>
+      <div id="login" class="model">
+        <div class="modal-content">
+          <div class="login-form">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 4rem;
+              "
+            >
+              <img src="/public/DynamicERP Logo.png" alt="dynamicerp logo" />
+            </div>
+            <div>
+              <form>
+                <div style="margin-bottom: 3rem">
+                  <h3>Login</h3>
+                  <p>please login to your account.</p>
+                </div>
+
+                <div class="input-group">
+                  <i class="fa-icon fa-solid fa-code"></i>
+                  <input
+                    class="input-text"
+                    type="text"
+                    placeholder="company code"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fa-icon fa-solid fa-envelope"></i>
+                  <input
+                    class="input-text"
+                    type="email"
+                    placeholder="email/username"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <i class="fa-icon fa-solid fa-lock"></i>
+                  <input
+                    class="input-text"
+                    type="password"
+                    placeholder="password"
+                  />
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 3rem 0;
+                  "
+                >
+                  <div>
+                    <input type="checkbox" />
+                    <label for="" style="font-size: 1.5rem">Remember me!</label>
+                  </div>
+                  <button type="submit" class="loginbtn">Login</button>
+                </div>
+
+                <div style="text-align: center">
+                  <a href="#">forget password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="block-section header-section">
+      <div class="header-container">
+        <img
+          src="/public/dynamic-erp-white-logo.svg"
+          alt="thapa technical logo"
+          class="logo"
+          width="200px"
+          id="logoImage"
+        />
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="#home">Home</a></li>
+            <li><a class="navbar-link" href="#features">Features</a></li>
+            <li><a class="navbar-link" href="#plans">Plans</a></li>
+            <li><a class="navbar-link" href="#accountant">Accountant</a></li>
+            <li><a class="navbar-link" href="#support">Support</a></li>
+            <li><a class="navbar-link" href="#contact">Contact</a></li>
+            <li>
+              <button class="loginbtn" id="toggle-registration-btn">
+                Log In
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+          <ion-icon
+            name="menu-outline"
+            class="mobile-nav-icon"
+            id="navbar-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="mobile-nav-icon"
+            id="navbar-icon"
+          ></ion-icon>
+        </div>
+      </div>
+
+      <section id="home" class="welcome-container">
+        <div class="demo-request">
+          <h2>Easy-to-use online accounting software for growing businesses</h2>
+          <a href="#demoForm"
+            ><button class="custom-btn">Request A Demo</button></a
+          >
+        </div>
+
+        <div>
+          <img
+            src="/public/main-img-of-petrol-station.png"
+            alt="analysis img"
+            width="450px"
+          />
+        </div>
+      </section>
+    </header>
+
+
+
+    <section class="container">
+      <h2>Multiple Asked Question</h2>
+      <div>
+        <h3 class="faq-header-accordian">How to Set Up and Calculate Shrinkage on PetrolPump Invoice</h3>
+        <div class="accordian-container">
+          <div class="accordian-containers">
+            <div class="allfaq-question">
+              <p><span>1</span>  Click "Product Master""</p>
+              <p><span>2</span> Click "Search"</p>
+              <p><span>3</span> Type the Name of the Product</p>
+            </div>
+      
+            <div class="faq-image-container">
+              <img src="/public/petrol - invoices.PNG" alt="" />
+              <img src="/public/petrol-invoices2.PNG" alt="" />
+              <img src="/public/ptrl-invoices3.PNG" alt="" />
+            <div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+    <!-- faq section -->
+
+    <!-- <section class="container">
+      <h2>Multiple Asked Question</h2>
+      <div class="faq-container">
+        <h3 class="faq-header">How to Set Up and Calculate Shrinkage on PetrolPump Invoice</h3>
+        <div class=" faq-items-second hidden">
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>1</span> Click "Product Master"</p>
+            <div class="answer hidden">
+              <img src="/public/petrol - invoices.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button" ><span>2</span> Click "Search"</p>
+            <div class="answer hidden">
+              <img src="/public/petrol-invoices2.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>3</span> Type the Name of the Product</p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices3.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>4</span> Click on the Edit Option </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices4.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>5</span> Click "For Petrol Pump" </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices5.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>6</span> Double-click this text field of Shrinkage Loss Rate and Working Loss Rate to Determine it </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices6.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>7</span> Click "** Select Shrinkage CostCeter Name **" and Type Shrinkage and Click on it
+            </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices7.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>8</span>Click "** Select Working Loss CostCeter Name **" and Type Working Loss and
+              Click on it</p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-invoices8.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>9</span> Click "Save" </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-i9.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>10</span> Click "OK" </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-i10.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>11</span> Click "Setup" </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-i11.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-question toggle-button"><span>12</span> Click "General Setup" </p>
+            <div class="answer hidden">
+              <img src="/public/ptrl-i12.PNG" alt="" width="600px" />
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <!-- faq section -->
+    <section class="block-section container">
+      <h2>Multiple Asked Question</h2>
+      <div class="faq-items">
+        <div class="question icon">
+          <p>How to Set Up and Calculate Shrinkage on PetrolPump Invoice</p>
+          <p class="icon"><i class="fa-solid fa-plus"></i></p>
+        </div>
+        <div class="PetrolPump-invoices">
+          
+          <div class="answer">
+              <img src="/public/petrol - invoices.PNG" alt="" width="600px" />
+          </div>
+
+          <div class="answer">
+              <img src="/public/petrol-invoices2.PNG" alt="" width="600px" />
+          </div>
+
+          <div class="answer">
+              <img src="/public/ptrl-invoices3.PNG" alt="" width="600px" />
+          </div>
+
+         
+          <div class="answer">
+              <img src="/public/ptrl-invoices4.PNG" alt="" width="600px" />
+          </div>
+
+          <div class="answer">
+              <img src="/public/ptrl-invoices5.PNG" alt="" width="600px" />
+          </div>
+          
+          <div class="answer">
+                <img src="/public/ptrl-invoices6.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+                <img src="/public/ptrl-invoices7.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+                <img src="/public/ptrl-invoices8.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+                <img src="/public/ptrl-i9.PNG" alt="" width="600px" />
+          </div>
+
+         
+          <div class="answer">
+                <img src="/public/ptrl-i10.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+                <img src="/public/ptrl-i11.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+                <img src="/public/ptrl-i12.PNG" alt="" width="600px" />
+          </div>
+
+          
+          <div class="answer">
+            <img src="/public/ptrl-i13.PNG" alt="" width="600px" />
+          </div>
+
+          <div class="answer">
+            <img src="/public/p-i14.PNG" alt="" width="600px" />
+          </div>
+
+          <div class="answer">
+            <img src="/public/p-i15.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i16.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i17.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i18.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i19.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i20.PNG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/p-i21.PNG" alt="" width="600px" />
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-items">
+        <div class="question icon">
+          <p>How can we generate Tax invoice via Petrol Invoice Transaction</p>
+          <p class="icon"><i class="fa-solid fa-plus"></i></p>
+        </div>
+        <div class="PetrolPump-invoices">
+          <div class="answer">
+            <img src="/public/psd1.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd2.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd3.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd4.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd5.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd6.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd7.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd8.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd9.JPG" alt="" width="600px" />
+          </div>
+          <div class="answer">
+            <img src="/public/psd10.JPG" alt="" width="600px" />
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-items">
+        <div class="question icon">
+          <p>
+            How Can we generate Tax Invoice on Petrol Pump Invoice via Mobile
+            Application
+          </p>
+          <p class="icon"><i class="fa-solid fa-plus"></i></p>
+        </div>
+        <div class="PetrolPump-invoices">
+          <div class="answer">
+            <h4>1. 1st Open Application and Insert user name and password</h4>
+            <img src="/public/1.jpg" alt="" width="300px"  />
+          </div>
+          <div class="answer">
+            <h4> 2. You can see the Dashboard and to do the Allocated transaction Just Click on the more option</h4>
+            <img src="/public/2.jpg" alt="" width="300px"  />
+          </div>
+          <div class="answer">
+            <h4>3. Here we can find out the Petrol Pump Sales and just Click over that One</h4>
+            <img src="/public/3.jpg" alt="" width="300px"  />
+          </div>
+          <div class="answer">
+            <h4>4. You can just See the Text Box Option indicating All the details of Buyers</h4>
+            <img src="/public/4.jpg" alt="" width="300px"  />
+          </div>
+          <div class="answer">
+            <h4>5. Click over the tick Mark Option and Generate the Invoice</h4>
+            <img src="/public/6.jpg" alt="" width="300px"  />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- mobile app or web app -->
+
+    <section class="block-section container">
+      <div style="text-align: center; margin-bottom: 3rem">
+        <h2>Dynamic academic ERP available on</h2>
+        <div>
+          <button id="toggleAppBtn-Mobile" class="custom-btn color_change">
+            Mobile App
+          </button>
+          <button id="toggleAppBtn-web" class="custom-btn">Web App</button>
+        </div>
+      </div>
+      <div id="mobile-app-view">
+        <div class="grid_three_section">
+          <div style="display: flex">
+            <img
+              src="/public/Layer 1.png"
+              alt="petrol station layer img"
+              width="200px"
+              style="margin: 0 3rem"
+            />
+            <img
+              src="/public/Layer 2.png"
+              alt="petrol station layer img"
+              width="200px"
+            />
+          </div>
+          <!-- style="margin-right: 4rem;" -->
+          <!-- <div >
+                    <svg width="66" height="63" viewBox="0 0 66 63" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.4021 1.97284C21.4021 1.22775 20.7742 0.597298 20.0321 0.597298C19.29 0.597298 18.6621 1.22775 18.6621 1.97284C18.6621 2.71793 19.29 3.34839 20.0321 3.34839C20.7742 3.34839 21.4021 2.77524 21.4021 1.97284Z" fill="#005138"></path><path d="M30.2497 1.97284C30.2497 1.22775 29.6218 0.597298 28.8798 0.597298C28.1377 0.597298 27.5098 1.22775 27.5098 1.97284C27.5098 2.71793 28.1377 3.34839 28.8798 3.34839C29.6218 3.34839 30.2497 2.77524 30.2497 1.97284Z" fill="#005138"></path><path d="M39.0984 1.97284C39.0984 1.22775 38.4705 0.597298 37.7284 0.597298C36.9863 0.597298 36.3584 1.22775 36.3584 1.97284C36.3584 2.71793 36.9863 3.34839 37.7284 3.34839C38.4705 3.34839 39.0984 2.77524 39.0984 1.97284Z" fill="#005138"></path><path d="M47.946 1.97284C47.946 1.22775 47.3181 0.597298 46.576 0.597298C45.834 0.597298 45.2061 1.22775 45.2061 1.97284C45.2061 2.71793 45.834 3.34839 46.576 3.34839C47.3181 3.34839 47.946 2.77524 47.946 1.97284Z" fill="#005138"></path><path d="M12.5554 10.3408C12.5554 9.59572 11.9275 8.96526 11.1854 8.96526C10.4433 8.96526 9.81543 9.59572 9.81543 10.3408C9.81543 11.0859 10.4433 11.7164 11.1854 11.7164C11.9846 11.7737 12.5554 11.1432 12.5554 10.3408Z" fill="#005138"></path><path d="M21.4031 10.3408C21.4031 9.59572 20.7752 8.96526 20.0331 8.96526C19.291 8.96526 18.6631 9.59572 18.6631 10.3408C18.6631 11.0859 19.291 11.7164 20.0331 11.7164C20.7752 11.7737 21.4031 11.1432 21.4031 10.3408Z" fill="#005138"></path><path d="M30.2517 10.3408C30.2517 9.59572 29.6238 8.96526 28.8817 8.96526C28.1396 8.96526 27.5117 9.59572 27.5117 10.3408C27.5117 11.0859 28.1396 11.7164 28.8817 11.7164C29.6238 11.7737 30.2517 11.1432 30.2517 10.3408Z" fill="#005138"></path><path d="M39.0994 10.3408C39.0994 9.59572 38.4714 8.96526 37.7294 8.96526C36.9873 8.96526 36.3594 9.59572 36.3594 10.3408C36.3594 11.0859 36.9873 11.7164 37.7294 11.7164C38.4714 11.7737 39.0994 11.1432 39.0994 10.3408Z" fill="#005138"></path><path d="M47.947 10.3408C47.947 9.59572 47.3191 8.96526 46.577 8.96526C45.8349 8.96526 45.207 9.59572 45.207 10.3408C45.207 11.0859 45.8349 11.7164 46.577 11.7164C47.3191 11.7737 47.947 11.1432 47.947 10.3408Z" fill="#005138"></path><path d="M56.7947 10.3408C56.7947 9.59572 56.1668 8.96526 55.4247 8.96526C54.6826 8.96526 54.0547 9.59572 54.0547 10.3408C54.0547 11.0859 54.6826 11.7164 55.4247 11.7164C56.1668 11.7737 56.7947 11.1432 56.7947 10.3408Z" fill="#005138"></path><path d="M12.5554 18.7663C12.5554 18.0212 11.9275 17.3908 11.1854 17.3908C10.4433 17.3908 9.81543 18.0212 9.81543 18.7663C9.81543 19.5114 10.4433 20.1418 11.1854 20.1418C11.9846 20.1418 12.5554 19.5114 12.5554 18.7663Z" fill="#005138"></path><path d="M21.4031 18.7663C21.4031 18.0212 20.7752 17.3908 20.0331 17.3908C19.291 17.3908 18.6631 18.0212 18.6631 18.7663C18.6631 19.5114 19.291 20.1418 20.0331 20.1418C20.7752 20.1418 21.4031 19.5114 21.4031 18.7663Z" fill="#005138"></path><path d="M30.2517 18.7663C30.2517 18.0212 29.6238 17.3908 28.8817 17.3908C28.1396 17.3908 27.5117 18.0212 27.5117 18.7663C27.5117 19.5114 28.1396 20.1418 28.8817 20.1418C29.6238 20.1418 30.2517 19.5114 30.2517 18.7663Z" fill="#005138"></path><path d="M39.0994 18.7663C39.0994 18.0212 38.4714 17.3908 37.7294 17.3908C36.9873 17.3908 36.3594 18.0212 36.3594 18.7663C36.3594 19.5114 36.9873 20.1418 37.7294 20.1418C38.4714 20.1418 39.0994 19.5114 39.0994 18.7663Z" fill="#005138"></path><path d="M47.947 18.7663C47.947 18.0212 47.3191 17.3908 46.577 17.3908C45.8349 17.3908 45.207 18.0212 45.207 18.7663C45.207 19.5114 45.8349 20.1418 46.577 20.1418C47.3191 20.1418 47.947 19.5114 47.947 18.7663Z" fill="#005138"></path><path d="M56.7947 18.7663C56.7947 18.0212 56.1668 17.3908 55.4247 17.3908C54.6255 17.3334 54.0547 17.9639 54.0547 18.7663C54.0547 19.5114 54.6826 20.1418 55.4247 20.1418C56.1668 20.1418 56.7947 19.5114 56.7947 18.7663Z" fill="#005138"></path><path d="M3.70677 27.134C3.70677 26.3889 3.07886 25.7584 2.33678 25.7584C1.59471 25.7584 0.966797 26.3889 0.966797 27.134C0.966797 27.8791 1.59471 28.5095 2.33678 28.5095C3.13594 28.5095 3.70677 27.8791 3.70677 27.134Z" fill="#005138"></path><path d="M12.5544 27.134C12.5544 26.3889 11.9265 25.7584 11.1844 25.7584C10.4424 25.7584 9.81445 26.3889 9.81445 27.134C9.81445 27.8791 10.4424 28.5095 11.1844 28.5095C11.9836 28.5095 12.5544 27.8791 12.5544 27.134Z" fill="#005138"></path><path d="M21.4031 27.134C21.4031 26.3889 20.7752 25.7584 20.0331 25.7584C19.291 25.7584 18.6631 26.3889 18.6631 27.134C18.6631 27.8791 19.291 28.5095 20.0331 28.5095C20.7752 28.5095 21.4031 27.8791 21.4031 27.134Z" fill="#005138"></path><path d="M30.2507 27.134C30.2507 26.3889 29.6228 25.7584 28.8807 25.7584C28.1387 25.7584 27.5107 26.3889 27.5107 27.134C27.5107 27.8791 28.1387 28.5095 28.8807 28.5095C29.6228 28.5095 30.2507 27.8791 30.2507 27.134Z" fill="#005138"></path><path d="M39.0984 27.134C39.0984 26.3889 38.4705 25.7584 37.7284 25.7584C36.9863 25.7584 36.3584 26.3889 36.3584 27.134C36.3584 27.8791 36.9863 28.5095 37.7284 28.5095C38.4705 28.5095 39.0984 27.8791 39.0984 27.134Z" fill="#005138"></path><path d="M47.946 27.134C47.946 26.3889 47.3181 25.7584 46.576 25.7584C45.834 25.7584 45.2061 26.3889 45.2061 27.134C45.2061 27.8791 45.834 28.5095 46.576 28.5095C47.3181 28.5095 47.946 27.8791 47.946 27.134Z" fill="#005138"></path><path d="M56.7937 27.134C56.7937 26.3889 56.1658 25.7584 55.4237 25.7584C54.6816 25.7584 54.0537 26.3889 54.0537 27.134C54.0537 27.8791 54.6816 28.5095 55.4237 28.5095C56.1658 28.5095 56.7937 27.8791 56.7937 27.134Z" fill="#005138"></path><path d="M64.2723 25.7584C65.029 25.7584 65.6423 26.3743 65.6423 27.134C65.6423 27.8937 65.029 28.5095 64.2723 28.5095C63.5157 28.5095 62.9023 27.8937 62.9023 27.134C62.9023 26.3743 63.5157 25.7584 64.2723 25.7584Z" fill="#005138"></path><path d="M3.70677 35.5019C3.70677 34.7568 3.07886 34.1263 2.33678 34.1263C1.59471 34.1263 0.966797 34.7568 0.966797 35.5019C0.966797 36.247 1.59471 36.8774 2.33678 36.8774C3.13594 36.8774 3.70677 36.247 3.70677 35.5019Z" fill="#005138"></path><path d="M12.5544 35.5019C12.5544 34.7568 11.9265 34.1263 11.1844 34.1263C10.4424 34.1263 9.81445 34.7568 9.81445 35.5019C9.81445 36.247 10.4424 36.8774 11.1844 36.8774C11.9836 36.8774 12.5544 36.247 12.5544 35.5019Z" fill="#005138"></path><path d="M21.4031 35.5019C21.4031 34.7568 20.7752 34.1263 20.0331 34.1263C19.291 34.1263 18.6631 34.7568 18.6631 35.5019C18.6631 36.247 19.291 36.8774 20.0331 36.8774C20.7752 36.8774 21.4031 36.247 21.4031 35.5019Z" fill="#005138"></path><path d="M30.2507 35.5019C30.2507 34.7568 29.6228 34.1263 28.8807 34.1263C28.1387 34.1263 27.5107 34.7568 27.5107 35.5019C27.5107 36.247 28.1387 36.8774 28.8807 36.8774C29.6228 36.8774 30.2507 36.247 30.2507 35.5019Z" fill="#005138"></path><path d="M39.0984 35.5019C39.0984 34.7568 38.4705 34.1263 37.7284 34.1263C36.9863 34.1263 36.3584 34.7568 36.3584 35.5019C36.3584 36.247 36.9863 36.8774 37.7284 36.8774C38.4705 36.8774 39.0984 36.247 39.0984 35.5019Z" fill="#005138"></path><path d="M47.946 35.5019C47.946 34.7568 47.3181 34.1263 46.576 34.1263C45.834 34.1263 45.2061 34.7568 45.2061 35.5019C45.2061 36.247 45.834 36.8774 46.576 36.8774C47.3181 36.8774 47.946 36.247 47.946 35.5019Z" fill="#005138"></path><path d="M56.7937 35.5019C56.7937 34.7568 56.1658 34.1263 55.4237 34.1263C54.6816 34.1263 54.0537 34.7568 54.0537 35.5019C54.0537 36.247 54.6816 36.8774 55.4237 36.8774C56.1658 36.8774 56.7937 36.247 56.7937 35.5019Z" fill="#005138"></path><path d="M65.6423 35.5019C65.6423 34.7568 65.0144 34.1263 64.2723 34.1263C63.5303 34.1263 62.9023 34.7568 62.9023 35.5019C62.9023 36.247 63.5303 36.8774 64.2723 36.8774C65.0144 36.8774 65.6423 36.247 65.6423 35.5019Z" fill="#005138"></path><path d="M12.5554 43.8699C12.5554 43.1248 11.9275 42.4943 11.1854 42.4943C10.4433 42.4943 9.81543 43.1248 9.81543 43.8699C9.81543 44.6149 10.4433 45.2454 11.1854 45.2454C11.9846 45.3027 12.5554 44.6723 12.5554 43.8699Z" fill="#005138"></path><path d="M21.4031 43.8699C21.4031 43.1248 20.7752 42.4943 20.0331 42.4943C19.291 42.4943 18.6631 43.1248 18.6631 43.8699C18.6631 44.6149 19.291 45.2454 20.0331 45.2454C20.7752 45.3027 21.4031 44.6723 21.4031 43.8699Z" fill="#005138"></path><path d="M30.2517 43.8699C30.2517 43.1248 29.6238 42.4943 28.8817 42.4943C28.1396 42.4943 27.5117 43.1248 27.5117 43.8699C27.5117 44.6149 28.1396 45.2454 28.8817 45.2454C29.6238 45.3027 30.2517 44.6723 30.2517 43.8699Z" fill="#005138"></path><path d="M39.0994 43.8699C39.0994 43.1248 38.4714 42.4943 37.7294 42.4943C36.9873 42.4943 36.3594 43.1248 36.3594 43.8699C36.3594 44.6149 36.9873 45.2454 37.7294 45.2454C38.4714 45.3027 39.0994 44.6723 39.0994 43.8699Z" fill="#005138"></path><path d="M47.947 43.8699C47.947 43.1248 47.3191 42.4943 46.577 42.4943C45.8349 42.4943 45.207 43.1248 45.207 43.8699C45.207 44.6149 45.8349 45.2454 46.577 45.2454C47.3191 45.3027 47.947 44.6723 47.947 43.8699Z" fill="#005138"></path><path d="M56.7947 43.8699C56.7947 43.1248 56.1668 42.4943 55.4247 42.4943C54.6255 42.4943 54.0547 43.1248 54.0547 43.8699C54.0547 44.6149 54.6826 45.2454 55.4247 45.2454C56.1668 45.3027 56.7947 44.6723 56.7947 43.8699Z" fill="#005138"></path><path d="M12.5554 52.2954C12.5554 51.5503 11.9275 50.9198 11.1854 50.9198C10.4433 50.9198 9.81543 51.5503 9.81543 52.2954C9.81543 53.0404 10.4433 53.6709 11.1854 53.6709C11.9846 53.6709 12.5554 53.0404 12.5554 52.2954Z" fill="#005138"></path><path d="M21.4031 52.2954C21.4031 51.5503 20.7752 50.9198 20.0331 50.9198C19.291 50.9198 18.6631 51.5503 18.6631 52.2954C18.6631 53.0404 19.291 53.6709 20.0331 53.6709C20.7752 53.6709 21.4031 53.0404 21.4031 52.2954Z" fill="#005138"></path><path d="M30.2517 52.2954C30.2517 51.5503 29.6238 50.9198 28.8817 50.9198C28.1396 50.9198 27.5117 51.5503 27.5117 52.2954C27.5117 53.0404 28.1396 53.6709 28.8817 53.6709C29.6238 53.6709 30.2517 53.0404 30.2517 52.2954Z" fill="#005138"></path><path d="M39.0994 52.2954C39.0994 51.5503 38.4714 50.9198 37.7294 50.9198C36.9873 50.9198 36.3594 51.5503 36.3594 52.2954C36.3594 53.0404 36.9873 53.6709 37.7294 53.6709C38.4714 53.6709 39.0994 53.0404 39.0994 52.2954Z" fill="#005138"></path><path d="M47.947 52.2954C47.947 51.5503 47.3191 50.9198 46.577 50.9198C45.8349 50.9198 45.207 51.5503 45.207 52.2954C45.207 53.0404 45.8349 53.6709 46.577 53.6709C47.3191 53.6709 47.947 53.0404 47.947 52.2954Z" fill="#005138"></path><path d="M56.7947 52.2954C56.7947 51.5503 56.1668 50.9198 55.4247 50.9198C54.6255 50.8625 54.0547 51.4929 54.0547 52.2954C54.0547 53.0404 54.6826 53.6709 55.4247 53.6709C56.1668 53.6709 56.7947 53.0404 56.7947 52.2954Z" fill="#005138"></path><path d="M21.4021 60.663C21.4021 59.9179 20.7742 59.2875 20.0321 59.2875C19.29 59.2875 18.6621 59.9179 18.6621 60.663C18.6621 61.4081 19.29 62.0386 20.0321 62.0386C20.7742 62.0386 21.4021 61.4081 21.4021 60.663Z" fill="#005138"></path><path d="M30.2497 60.663C30.2497 59.9179 29.6218 59.2875 28.8798 59.2875C28.1377 59.2875 27.5098 59.9179 27.5098 60.663C27.5098 61.4081 28.1377 62.0386 28.8798 62.0386C29.6218 62.0386 30.2497 61.4081 30.2497 60.663Z" fill="#005138"></path><path d="M39.0984 60.663C39.0984 59.9179 38.4705 59.2875 37.7284 59.2875C36.9863 59.2875 36.3584 59.9179 36.3584 60.663C36.3584 61.4081 36.9863 62.0386 37.7284 62.0386C38.4705 62.0386 39.0984 61.4081 39.0984 60.663Z" fill="#005138"></path><path d="M47.946 60.663C47.946 59.9179 47.3181 59.2875 46.576 59.2875C45.834 59.2875 45.2061 59.9179 45.2061 60.663C45.2061 61.4081 45.7769 62.0386 46.576 62.0386C47.3181 62.0386 47.946 61.4081 47.946 60.663Z" fill="#005138"></path></svg>
+                </div> -->
+
+          <div class="plans-list">
+            <h3>Academic ERP made easy learning on mobile devices</h3>
+            <p>Student resources can be downloaded from the app by students</p>
+
+            <ul style="margin-left: 2rem">
+              <li>
+                <p>
+                  Dynamic Accounting ERP made Accounting Transaction Easy on
+                  mobile devices
+                </p>
+              </li>
+              <li>
+                <p>Accounting Report can be downloaded from the app by User</p>
+              </li>
+              <li><p>Easily deliver dynamic Report via Application</p></li>
+              <li><p>POS Transaction can be Done via Application.</p></li>
+              <li><p>Inventory Management System via Application.</p></li>
+              <li><p>Track the transaction of Ledger and Product.</p></li>
+              <li><p>Salesman Attendence Tracing Application.</p></li>
+              <li><p>Event Calendar management.</p></li>
+              <li><p>App Content Management System .</p></li>
+              <li><p>GPS live tracker.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="web-app-view" style="display: none">
+        <div class="grid_three_section">
+          <div>
+            <img
+              src="/public/Layer 10.png"
+              alt="petrol station layer img"
+              width="500px"
+            />
+          </div>
+
+          <!-- <div>
+                    <svg width="66" height="63" viewBox="0 0 66 63" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.4021 1.97284C21.4021 1.22775 20.7742 0.597298 20.0321 0.597298C19.29 0.597298 18.6621 1.22775 18.6621 1.97284C18.6621 2.71793 19.29 3.34839 20.0321 3.34839C20.7742 3.34839 21.4021 2.77524 21.4021 1.97284Z" fill="#005138"></path><path d="M30.2497 1.97284C30.2497 1.22775 29.6218 0.597298 28.8798 0.597298C28.1377 0.597298 27.5098 1.22775 27.5098 1.97284C27.5098 2.71793 28.1377 3.34839 28.8798 3.34839C29.6218 3.34839 30.2497 2.77524 30.2497 1.97284Z" fill="#005138"></path><path d="M39.0984 1.97284C39.0984 1.22775 38.4705 0.597298 37.7284 0.597298C36.9863 0.597298 36.3584 1.22775 36.3584 1.97284C36.3584 2.71793 36.9863 3.34839 37.7284 3.34839C38.4705 3.34839 39.0984 2.77524 39.0984 1.97284Z" fill="#005138"></path><path d="M47.946 1.97284C47.946 1.22775 47.3181 0.597298 46.576 0.597298C45.834 0.597298 45.2061 1.22775 45.2061 1.97284C45.2061 2.71793 45.834 3.34839 46.576 3.34839C47.3181 3.34839 47.946 2.77524 47.946 1.97284Z" fill="#005138"></path><path d="M12.5554 10.3408C12.5554 9.59572 11.9275 8.96526 11.1854 8.96526C10.4433 8.96526 9.81543 9.59572 9.81543 10.3408C9.81543 11.0859 10.4433 11.7164 11.1854 11.7164C11.9846 11.7737 12.5554 11.1432 12.5554 10.3408Z" fill="#005138"></path><path d="M21.4031 10.3408C21.4031 9.59572 20.7752 8.96526 20.0331 8.96526C19.291 8.96526 18.6631 9.59572 18.6631 10.3408C18.6631 11.0859 19.291 11.7164 20.0331 11.7164C20.7752 11.7737 21.4031 11.1432 21.4031 10.3408Z" fill="#005138"></path><path d="M30.2517 10.3408C30.2517 9.59572 29.6238 8.96526 28.8817 8.96526C28.1396 8.96526 27.5117 9.59572 27.5117 10.3408C27.5117 11.0859 28.1396 11.7164 28.8817 11.7164C29.6238 11.7737 30.2517 11.1432 30.2517 10.3408Z" fill="#005138"></path><path d="M39.0994 10.3408C39.0994 9.59572 38.4714 8.96526 37.7294 8.96526C36.9873 8.96526 36.3594 9.59572 36.3594 10.3408C36.3594 11.0859 36.9873 11.7164 37.7294 11.7164C38.4714 11.7737 39.0994 11.1432 39.0994 10.3408Z" fill="#005138"></path><path d="M47.947 10.3408C47.947 9.59572 47.3191 8.96526 46.577 8.96526C45.8349 8.96526 45.207 9.59572 45.207 10.3408C45.207 11.0859 45.8349 11.7164 46.577 11.7164C47.3191 11.7737 47.947 11.1432 47.947 10.3408Z" fill="#005138"></path><path d="M56.7947 10.3408C56.7947 9.59572 56.1668 8.96526 55.4247 8.96526C54.6826 8.96526 54.0547 9.59572 54.0547 10.3408C54.0547 11.0859 54.6826 11.7164 55.4247 11.7164C56.1668 11.7737 56.7947 11.1432 56.7947 10.3408Z" fill="#005138"></path><path d="M12.5554 18.7663C12.5554 18.0212 11.9275 17.3908 11.1854 17.3908C10.4433 17.3908 9.81543 18.0212 9.81543 18.7663C9.81543 19.5114 10.4433 20.1418 11.1854 20.1418C11.9846 20.1418 12.5554 19.5114 12.5554 18.7663Z" fill="#005138"></path><path d="M21.4031 18.7663C21.4031 18.0212 20.7752 17.3908 20.0331 17.3908C19.291 17.3908 18.6631 18.0212 18.6631 18.7663C18.6631 19.5114 19.291 20.1418 20.0331 20.1418C20.7752 20.1418 21.4031 19.5114 21.4031 18.7663Z" fill="#005138"></path><path d="M30.2517 18.7663C30.2517 18.0212 29.6238 17.3908 28.8817 17.3908C28.1396 17.3908 27.5117 18.0212 27.5117 18.7663C27.5117 19.5114 28.1396 20.1418 28.8817 20.1418C29.6238 20.1418 30.2517 19.5114 30.2517 18.7663Z" fill="#005138"></path><path d="M39.0994 18.7663C39.0994 18.0212 38.4714 17.3908 37.7294 17.3908C36.9873 17.3908 36.3594 18.0212 36.3594 18.7663C36.3594 19.5114 36.9873 20.1418 37.7294 20.1418C38.4714 20.1418 39.0994 19.5114 39.0994 18.7663Z" fill="#005138"></path><path d="M47.947 18.7663C47.947 18.0212 47.3191 17.3908 46.577 17.3908C45.8349 17.3908 45.207 18.0212 45.207 18.7663C45.207 19.5114 45.8349 20.1418 46.577 20.1418C47.3191 20.1418 47.947 19.5114 47.947 18.7663Z" fill="#005138"></path><path d="M56.7947 18.7663C56.7947 18.0212 56.1668 17.3908 55.4247 17.3908C54.6255 17.3334 54.0547 17.9639 54.0547 18.7663C54.0547 19.5114 54.6826 20.1418 55.4247 20.1418C56.1668 20.1418 56.7947 19.5114 56.7947 18.7663Z" fill="#005138"></path><path d="M3.70677 27.134C3.70677 26.3889 3.07886 25.7584 2.33678 25.7584C1.59471 25.7584 0.966797 26.3889 0.966797 27.134C0.966797 27.8791 1.59471 28.5095 2.33678 28.5095C3.13594 28.5095 3.70677 27.8791 3.70677 27.134Z" fill="#005138"></path><path d="M12.5544 27.134C12.5544 26.3889 11.9265 25.7584 11.1844 25.7584C10.4424 25.7584 9.81445 26.3889 9.81445 27.134C9.81445 27.8791 10.4424 28.5095 11.1844 28.5095C11.9836 28.5095 12.5544 27.8791 12.5544 27.134Z" fill="#005138"></path><path d="M21.4031 27.134C21.4031 26.3889 20.7752 25.7584 20.0331 25.7584C19.291 25.7584 18.6631 26.3889 18.6631 27.134C18.6631 27.8791 19.291 28.5095 20.0331 28.5095C20.7752 28.5095 21.4031 27.8791 21.4031 27.134Z" fill="#005138"></path><path d="M30.2507 27.134C30.2507 26.3889 29.6228 25.7584 28.8807 25.7584C28.1387 25.7584 27.5107 26.3889 27.5107 27.134C27.5107 27.8791 28.1387 28.5095 28.8807 28.5095C29.6228 28.5095 30.2507 27.8791 30.2507 27.134Z" fill="#005138"></path><path d="M39.0984 27.134C39.0984 26.3889 38.4705 25.7584 37.7284 25.7584C36.9863 25.7584 36.3584 26.3889 36.3584 27.134C36.3584 27.8791 36.9863 28.5095 37.7284 28.5095C38.4705 28.5095 39.0984 27.8791 39.0984 27.134Z" fill="#005138"></path><path d="M47.946 27.134C47.946 26.3889 47.3181 25.7584 46.576 25.7584C45.834 25.7584 45.2061 26.3889 45.2061 27.134C45.2061 27.8791 45.834 28.5095 46.576 28.5095C47.3181 28.5095 47.946 27.8791 47.946 27.134Z" fill="#005138"></path><path d="M56.7937 27.134C56.7937 26.3889 56.1658 25.7584 55.4237 25.7584C54.6816 25.7584 54.0537 26.3889 54.0537 27.134C54.0537 27.8791 54.6816 28.5095 55.4237 28.5095C56.1658 28.5095 56.7937 27.8791 56.7937 27.134Z" fill="#005138"></path><path d="M64.2723 25.7584C65.029 25.7584 65.6423 26.3743 65.6423 27.134C65.6423 27.8937 65.029 28.5095 64.2723 28.5095C63.5157 28.5095 62.9023 27.8937 62.9023 27.134C62.9023 26.3743 63.5157 25.7584 64.2723 25.7584Z" fill="#005138"></path><path d="M3.70677 35.5019C3.70677 34.7568 3.07886 34.1263 2.33678 34.1263C1.59471 34.1263 0.966797 34.7568 0.966797 35.5019C0.966797 36.247 1.59471 36.8774 2.33678 36.8774C3.13594 36.8774 3.70677 36.247 3.70677 35.5019Z" fill="#005138"></path><path d="M12.5544 35.5019C12.5544 34.7568 11.9265 34.1263 11.1844 34.1263C10.4424 34.1263 9.81445 34.7568 9.81445 35.5019C9.81445 36.247 10.4424 36.8774 11.1844 36.8774C11.9836 36.8774 12.5544 36.247 12.5544 35.5019Z" fill="#005138"></path><path d="M21.4031 35.5019C21.4031 34.7568 20.7752 34.1263 20.0331 34.1263C19.291 34.1263 18.6631 34.7568 18.6631 35.5019C18.6631 36.247 19.291 36.8774 20.0331 36.8774C20.7752 36.8774 21.4031 36.247 21.4031 35.5019Z" fill="#005138"></path><path d="M30.2507 35.5019C30.2507 34.7568 29.6228 34.1263 28.8807 34.1263C28.1387 34.1263 27.5107 34.7568 27.5107 35.5019C27.5107 36.247 28.1387 36.8774 28.8807 36.8774C29.6228 36.8774 30.2507 36.247 30.2507 35.5019Z" fill="#005138"></path><path d="M39.0984 35.5019C39.0984 34.7568 38.4705 34.1263 37.7284 34.1263C36.9863 34.1263 36.3584 34.7568 36.3584 35.5019C36.3584 36.247 36.9863 36.8774 37.7284 36.8774C38.4705 36.8774 39.0984 36.247 39.0984 35.5019Z" fill="#005138"></path><path d="M47.946 35.5019C47.946 34.7568 47.3181 34.1263 46.576 34.1263C45.834 34.1263 45.2061 34.7568 45.2061 35.5019C45.2061 36.247 45.834 36.8774 46.576 36.8774C47.3181 36.8774 47.946 36.247 47.946 35.5019Z" fill="#005138"></path><path d="M56.7937 35.5019C56.7937 34.7568 56.1658 34.1263 55.4237 34.1263C54.6816 34.1263 54.0537 34.7568 54.0537 35.5019C54.0537 36.247 54.6816 36.8774 55.4237 36.8774C56.1658 36.8774 56.7937 36.247 56.7937 35.5019Z" fill="#005138"></path><path d="M65.6423 35.5019C65.6423 34.7568 65.0144 34.1263 64.2723 34.1263C63.5303 34.1263 62.9023 34.7568 62.9023 35.5019C62.9023 36.247 63.5303 36.8774 64.2723 36.8774C65.0144 36.8774 65.6423 36.247 65.6423 35.5019Z" fill="#005138"></path><path d="M12.5554 43.8699C12.5554 43.1248 11.9275 42.4943 11.1854 42.4943C10.4433 42.4943 9.81543 43.1248 9.81543 43.8699C9.81543 44.6149 10.4433 45.2454 11.1854 45.2454C11.9846 45.3027 12.5554 44.6723 12.5554 43.8699Z" fill="#005138"></path><path d="M21.4031 43.8699C21.4031 43.1248 20.7752 42.4943 20.0331 42.4943C19.291 42.4943 18.6631 43.1248 18.6631 43.8699C18.6631 44.6149 19.291 45.2454 20.0331 45.2454C20.7752 45.3027 21.4031 44.6723 21.4031 43.8699Z" fill="#005138"></path><path d="M30.2517 43.8699C30.2517 43.1248 29.6238 42.4943 28.8817 42.4943C28.1396 42.4943 27.5117 43.1248 27.5117 43.8699C27.5117 44.6149 28.1396 45.2454 28.8817 45.2454C29.6238 45.3027 30.2517 44.6723 30.2517 43.8699Z" fill="#005138"></path><path d="M39.0994 43.8699C39.0994 43.1248 38.4714 42.4943 37.7294 42.4943C36.9873 42.4943 36.3594 43.1248 36.3594 43.8699C36.3594 44.6149 36.9873 45.2454 37.7294 45.2454C38.4714 45.3027 39.0994 44.6723 39.0994 43.8699Z" fill="#005138"></path><path d="M47.947 43.8699C47.947 43.1248 47.3191 42.4943 46.577 42.4943C45.8349 42.4943 45.207 43.1248 45.207 43.8699C45.207 44.6149 45.8349 45.2454 46.577 45.2454C47.3191 45.3027 47.947 44.6723 47.947 43.8699Z" fill="#005138"></path><path d="M56.7947 43.8699C56.7947 43.1248 56.1668 42.4943 55.4247 42.4943C54.6255 42.4943 54.0547 43.1248 54.0547 43.8699C54.0547 44.6149 54.6826 45.2454 55.4247 45.2454C56.1668 45.3027 56.7947 44.6723 56.7947 43.8699Z" fill="#005138"></path><path d="M12.5554 52.2954C12.5554 51.5503 11.9275 50.9198 11.1854 50.9198C10.4433 50.9198 9.81543 51.5503 9.81543 52.2954C9.81543 53.0404 10.4433 53.6709 11.1854 53.6709C11.9846 53.6709 12.5554 53.0404 12.5554 52.2954Z" fill="#005138"></path><path d="M21.4031 52.2954C21.4031 51.5503 20.7752 50.9198 20.0331 50.9198C19.291 50.9198 18.6631 51.5503 18.6631 52.2954C18.6631 53.0404 19.291 53.6709 20.0331 53.6709C20.7752 53.6709 21.4031 53.0404 21.4031 52.2954Z" fill="#005138"></path><path d="M30.2517 52.2954C30.2517 51.5503 29.6238 50.9198 28.8817 50.9198C28.1396 50.9198 27.5117 51.5503 27.5117 52.2954C27.5117 53.0404 28.1396 53.6709 28.8817 53.6709C29.6238 53.6709 30.2517 53.0404 30.2517 52.2954Z" fill="#005138"></path><path d="M39.0994 52.2954C39.0994 51.5503 38.4714 50.9198 37.7294 50.9198C36.9873 50.9198 36.3594 51.5503 36.3594 52.2954C36.3594 53.0404 36.9873 53.6709 37.7294 53.6709C38.4714 53.6709 39.0994 53.0404 39.0994 52.2954Z" fill="#005138"></path><path d="M47.947 52.2954C47.947 51.5503 47.3191 50.9198 46.577 50.9198C45.8349 50.9198 45.207 51.5503 45.207 52.2954C45.207 53.0404 45.8349 53.6709 46.577 53.6709C47.3191 53.6709 47.947 53.0404 47.947 52.2954Z" fill="#005138"></path><path d="M56.7947 52.2954C56.7947 51.5503 56.1668 50.9198 55.4247 50.9198C54.6255 50.8625 54.0547 51.4929 54.0547 52.2954C54.0547 53.0404 54.6826 53.6709 55.4247 53.6709C56.1668 53.6709 56.7947 53.0404 56.7947 52.2954Z" fill="#005138"></path><path d="M21.4021 60.663C21.4021 59.9179 20.7742 59.2875 20.0321 59.2875C19.29 59.2875 18.6621 59.9179 18.6621 60.663C18.6621 61.4081 19.29 62.0386 20.0321 62.0386C20.7742 62.0386 21.4021 61.4081 21.4021 60.663Z" fill="#005138"></path><path d="M30.2497 60.663C30.2497 59.9179 29.6218 59.2875 28.8798 59.2875C28.1377 59.2875 27.5098 59.9179 27.5098 60.663C27.5098 61.4081 28.1377 62.0386 28.8798 62.0386C29.6218 62.0386 30.2497 61.4081 30.2497 60.663Z" fill="#005138"></path><path d="M39.0984 60.663C39.0984 59.9179 38.4705 59.2875 37.7284 59.2875C36.9863 59.2875 36.3584 59.9179 36.3584 60.663C36.3584 61.4081 36.9863 62.0386 37.7284 62.0386C38.4705 62.0386 39.0984 61.4081 39.0984 60.663Z" fill="#005138"></path><path d="M47.946 60.663C47.946 59.9179 47.3181 59.2875 46.576 59.2875C45.834 59.2875 45.2061 59.9179 45.2061 60.663C45.2061 61.4081 45.7769 62.0386 46.576 62.0386C47.3181 62.0386 47.946 61.4081 47.946 60.663Z" fill="#005138"></path></svg>
+                </div> -->
+
+          <div class="plans-list">
+            <h3>Dynamic ERP made easy learning on web app</h3>
+            <p>
+              Fast, Secure, and easy-to-learn dashboard to carry out all the
+              processes, manage information, and to do all the Accounting
+              Transaction.
+            </p>
+
+            <ul style="margin-left: 2rem">
+              <li>
+                <p>
+                  We provide a cloud-based Web Dashboard with reliable, fastest,
+                  and most secure servers available today.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Users with little technical experience can utilize in-depth
+                  features.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Advance filtering and user wise pivot table view like excel.
+                </p>
+              </li>
+              <li><p>Transaction apporval and rejcetion system.</p></li>
+              <li><p>IRD Verified Billing Software.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- invoice section -->
+    <section class="block-section">
+      <div class="invoice-container">
+        <div class="invoice-first">
+          <div>
+            <img
+              src="/public/Group.png"
+              alt="invoice image"
+              width="500px"
+              height="300px"
+            />
+          </div>
+          <div>
+            <h2>
+              A single <span>platform</span> for
+              <span>managing</span> everything
+            </h2>
+            <p>
+              Book-keeping can be done from a computer, laptop, tablet, or
+              smartphone. You can create access credentials for your accountant
+              and team to access your data online.
+            </p>
+            <button class="loginbtn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="invoice-second">
+          <div>
+            <h2>
+              <span> Small & growing </span> businesses must have
+              <span> effective accounting </span> tools
+            </h2>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-section1">
+                <div>
+                  <p>
+                    Your information is always at your fingertips with
+                    PivotalERP Online, so you can get the information you
+                    require at any time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-section2">
+              <div>
+                <p>
+                  Keep your books accurate & up-to-date by integrating them with
+                  financial services and applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="card-section3">
+              <div>
+                <p>
+                  PivotalERP organizes & stores your expense receipts, so you
+                  can file every deduction at tax time.
+                </p>
+              </div>
+            </div>
+
+            <div class="card-section4">
+              <div>
+                <p>
+                  You can always get help from PivotalERP, thanks to its free &
+                  unlimited support.
+                </p>
+              </div>
+            </div>
+
+            <!-- <div class="stick"></div> -->
+          </div>
+
+          <div class="stick"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-section erp-analytical">
+      <div class="grid-two-section">
+        <div>
+          <h2>
+            DynamicERP online allows you to manage your business more
+            effectively
+          </h2>
+          <a href="#demoForm"><button class="custom-btn">Request A Demo</button></a>
+        </div>
+        <div>
+          <img
+            src="/public/analytical.svg"
+            alt="erp-business-alalytical"
+            width="250px"
+            height="200px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- accounting section -->
+    <section class="block-section accounting">
+      <div class="grid-two-section">
+        <div>
+          <img
+            src="/public/salesTeam.svg"
+            alt=" accounting section"
+            width="526px"
+            height="370px"
+          />
+        </div>
+        <div>
+          <h2>
+            Set your <span> preferred conditions </span> for
+            <span> your business </span>
+          </h2>
+          <div class="inquery">
+            <i class="fa-icon fas fa-arrow-circle-right"></i>
+            <div>
+              <h3>The invoicing process</h3>
+              <p>
+                Easily create attractive invoices and send them instantly.
+                Increase your cash flow with personalized invoices and automatic
+                notifications.
+              </p>
+            </div>
+          </div>
+
+          <div class="inquery">
+            <i class="fa-icon fas fa-arrow-circle-right"></i>
+            <div>
+              <h3>Amounts incurred</h3>
+              <p>
+                To keep you prepared for tax time, we will keep a record of
+                every receipt. Put anend to all those receipts in your pocket.
+              </p>
+            </div>
+          </div>
+
+          <div class="inquery">
+            <i class="fa-icon fas fa-arrow-circle-right"></i>
+            <div>
+              <h3>Detailed reports</h3>
+              <p>
+                You can view a selection of useful reports to find out how
+                things are going. You can also build one with the details that
+                are important to you.
+              </p>
+            </div>
+          </div>
+
+          <button class="custom-btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq section  -->
+
+    <section id="faq" class="block-section faq-section">
+      <p>
+        Do you have any questions? Check our <span>FAQ</span> or
+        <span>Help Center</span>
+      </p>
+      <h2>Frequently Asked Questions</h2>
+
+      <div>
+        <div class="faq-items">
+          <div class="question icon">
+            <p>How can we Determine Shrinkage and Working loss ?</p>
+            <p class="icon"><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <div class="answer">
+            <p>
+              Shrinkage and Working Loss can be determined via Product Master
+              allocating the Percentage for Doing Transaction that can be
+              determined via Purchase and Sales Transaction.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-items">
+          <div class="question icon">
+            <p>How Can we do Petrol Pump Transaction?</p>
+            <p class="icon"><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <div class="answer">
+            <p>
+              Not at all! You are not obligated to sign up for PivotalERP on a
+              long-term basis, since it is a pay-per-use service. Any time you
+              feel our product or service is not working for you, you may cancel
+              your subscription.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-items">
+          <div class="question icon">
+            <p>
+              Will quicklybooks online accounting software work on my Apple Mac
+              ?
+            </p>
+            <p class="icon"><i class="fa-solid fa-plus"></i></p>
+          </div>
+          <div class="answer">
+            <p>
+              Yes, it’s fully secured. Pivotal ERP encrypts all data and
+              requires two-factor authentication for your transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section  -->
+    <section id="features" class="block-section features-section">
+      <h2 class="container">Some Features of DynamicERP</h2>
+
+      <div class="grid-two-section">
+        <div class="features-content-l">
+          <h3>Creating invoices</h3>
+          <p>
+            Make business solutions that benefit from these features, such as
+            voice notifications,invoice reminders, and automated synchronization
+            of payments to receipts.
+          </p>
+           <!-- <button class="custom-btn">Learn More</button> -->
+        </div>
+        <div>
+          <img
+            src="/public/invoices1.svg"
+            alt=" features invoice img"
+            width="203 px"
+            height=""
+          />
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div>
+          <img
+            src="/public/bearish.svg"
+            alt="bearish.svg"
+            width="203 px"
+            height=""
+          />
+        </div>
+        <div class="features-content-r">
+          <h3>Amounts incurred</h3>
+          <p>
+            You can consolidate all your expenses under one roof and prepare for
+            tax season.
+          </p>
+          <!-- <a href="#"> <button class="custom-btn">Learn More</button> </a> -->
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div class="features-content-l">
+          <h3>Banking & Funds</h3>
+          <p>
+            You can get a complete picture of your finances when you connect
+            your bank.
+          </p>
+          <!-- <a href="#"> <button class="custom-btn">Learn More</button> </a> -->
+        </div>
+        <div>
+          <img
+            src="/public/bank.svg"
+            alt="bank image"
+            width="203 px"
+            height=""
+          />
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div>
+          <img
+            src="/public/analysis.svg"
+            alt="analysis image"
+            width="203 px"
+            height=""
+          />
+        </div>
+        <div class="features-content-r">
+          <h3>Stocks</h3>
+          <p>
+            Maintain real-time stock control by keeping an eye on your orders
+            and stock levels.
+          </p>
+          <!-- <a href="#"> <button class="custom-btn">Learn More</button> </a> -->
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div class="features-content-l">
+          <h3>Receipts are collected and organized</h3>
+          <p>
+            Take pictures of receipts using your phone. Using PivotalERP, you
+            can stay on top of everything, keep track of everything, and stay
+            ready for taxes.
+          </p>
+          <!-- <a href="#"> <button class="custom-btn">Learn More</button> </a> -->
+        </div>
+        <div>
+          <img
+            src="/public/receipt.svg"
+            alt="receipt image"
+            width="203 px"
+            height=""
+          />
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div>
+          <img
+            src="/public/analysisWithLens.svg"
+            alt="bank image"
+            width="203 px"
+            height=""
+          />
+        </div>
+        <div class="features-content-r">
+          <h3>A look at the latest insights</h3>
+          <p>
+            View popular reports, and a cash flow calculator, get an overview of
+            your company's performance and get a sense of the future.
+          </p>
+          <!-- <a href="#"> <button class="custom-btn">Learn More</button> </a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans section -->
+    <section id="plans" class="block-section container">
+      <div style="display: flex; align-items: center; flex-direction: column">
+        <h2>DynamicERP has a solution for you</h2>
+        <p>DynamicERP has a solution for every business</p>
+      </div>
+
+      <div class="plans-container">
+        <div class="plans-1">
+          <div class="plans-card">
+            <div class="pricing-container">
+              <div>
+                <span class="amount">15,000</span>
+              </div>
+              <p>STANDARD</p>
+
+              <div class="water-wave-card">
+                <svg
+                  class="pricing-deco-img waveHeight"
+                  enable-background="new 0 0 300 100"
+                  height="90px"
+                  id="Layer_1"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 300 100"
+                  width="100%"
+                  x="0px"
+                  xml:space="preserve"
+                  y="0px"
+                  style="margin: 0px 0px -2px"
+                >
+                  <g clip-path="url(#clip0_4_7)">
+                    <path
+                      class="deco-layer deco-layer--1"
+                      opacity="0.6"
+                      d="M30.913 43.9439C30.913 43.9439 73.824 9.47992 118.423 29.7529C195.733 64.8929 231.727 27.8009 265.061 25.0239C313.715 20.9679 331 54 331 54L335.001 95.6379H30.913V43.9439Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--2"
+                      opacity="0.6"
+                      d="M-35.667 44.6281C-35.667 44.6281 7.243 10.1651 51.843 30.4371C129.153 65.5781 165.147 28.4851 198.482 25.7081C247.135 21.6531 268.421 41.9261 268.421 41.9261V96.3221H-35.667V44.6281Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--3"
+                      opacity="0.7"
+                      d="M43.415 98.342C43.415 98.342 91.698 29.415 152.548 29.415C218.434 29.415 250.531 97.329 250.531 97.329V101.045H42.401L43.415 98.342Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--4"
+                      d="M-34.667 62.9979C-34.667 62.9979 21.333 17.3309 85.649 35.1589C167.484 57.8419 197 41.3319 232.286 30.4279C285.356 14.0289 337.666 75 337.666 75V103.998L-34.334 101.044L-34.667 62.9979Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_7">
+                      <rect width="300" height="100" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="plans-list">
+              <ul>
+                <li><p>Full Features</p></li>
+                <li><p>Free support all year round</p></li>
+                <li><p>Free remote training</p></li>
+                <li><p>Unlimited storage</p></li>
+                <li><p>Unlimited users</p></li>
+              </ul>
+              <div style="text-align: center">
+                <button class="custom-btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plans-2">
+          <div class="plans-card">
+            <div class="pricing-container">
+              <div>
+                <span class="amount">25,000</span>
+              </div>
+              <p>PROFESSIONAL</p>
+
+              <div class="water-wave-card">
+                <svg
+                  class="pricing-deco-img waveHeight"
+                  enable-background="new 0 0 300 100"
+                  height="90px"
+                  id="Layer_1"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 300 100"
+                  width="100%"
+                  x="0px"
+                  xml:space="preserve"
+                  y="0px"
+                  style="margin: 0px 0px -2px"
+                >
+                  <g clip-path="url(#clip0_4_7)">
+                    <path
+                      class="deco-layer deco-layer--1"
+                      opacity="0.6"
+                      d="M30.913 43.9439C30.913 43.9439 73.824 9.47992 118.423 29.7529C195.733 64.8929 231.727 27.8009 265.061 25.0239C313.715 20.9679 331 54 331 54L335.001 95.6379H30.913V43.9439Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--2"
+                      opacity="0.6"
+                      d="M-35.667 44.6281C-35.667 44.6281 7.243 10.1651 51.843 30.4371C129.153 65.5781 165.147 28.4851 198.482 25.7081C247.135 21.6531 268.421 41.9261 268.421 41.9261V96.3221H-35.667V44.6281Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--3"
+                      opacity="0.7"
+                      d="M43.415 98.342C43.415 98.342 91.698 29.415 152.548 29.415C218.434 29.415 250.531 97.329 250.531 97.329V101.045H42.401L43.415 98.342Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--4"
+                      d="M-34.667 62.9979C-34.667 62.9979 21.333 17.3309 85.649 35.1589C167.484 57.8419 197 41.3319 232.286 30.4279C285.356 14.0289 337.666 75 337.666 75V103.998L-34.334 101.044L-34.667 62.9979Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_7">
+                      <rect width="300" height="100" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="plans-list">
+              <ul>
+                <li><p>Full Features</p></li>
+                <li><p>Free support all year round</p></li>
+                <li><p>Free remote training</p></li>
+                <li><p>Unlimited storage</p></li>
+                <li><p>Unlimited users</p></li>
+              </ul>
+              <div style="text-align: center">
+                <button class="custom-btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plans-3">
+          <div class="plans-card">
+            <div class="pricing-container">
+              <div>
+                <h2 style="color: white">All feature packed</h2>
+              </div>
+              <p>ENTERPRISE</p>
+
+              <div class="water-wave-card">
+                <svg
+                  class="pricing-deco-img waveHeight"
+                  enable-background="new 0 0 300 100"
+                  height="90px"
+                  id="Layer_1"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 300 100"
+                  width="100%"
+                  x="0px"
+                  xml:space="preserve"
+                  y="0px"
+                  style="margin: 0px 0px -2px"
+                >
+                  <g clip-path="url(#clip0_4_7)">
+                    <path
+                      class="deco-layer deco-layer--1"
+                      opacity="0.6"
+                      d="M30.913 43.9439C30.913 43.9439 73.824 9.47992 118.423 29.7529C195.733 64.8929 231.727 27.8009 265.061 25.0239C313.715 20.9679 331 54 331 54L335.001 95.6379H30.913V43.9439Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--2"
+                      opacity="0.6"
+                      d="M-35.667 44.6281C-35.667 44.6281 7.243 10.1651 51.843 30.4371C129.153 65.5781 165.147 28.4851 198.482 25.7081C247.135 21.6531 268.421 41.9261 268.421 41.9261V96.3221H-35.667V44.6281Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--3"
+                      opacity="0.7"
+                      d="M43.415 98.342C43.415 98.342 91.698 29.415 152.548 29.415C218.434 29.415 250.531 97.329 250.531 97.329V101.045H42.401L43.415 98.342Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      class="deco-layer deco-layer--4"
+                      d="M-34.667 62.9979C-34.667 62.9979 21.333 17.3309 85.649 35.1589C167.484 57.8419 197 41.3319 232.286 30.4279C285.356 14.0289 337.666 75 337.666 75V103.998L-34.334 101.044L-34.667 62.9979Z"
+                      fill="white"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_7">
+                      <rect width="300" height="100" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="plans-list">
+              <ul>
+                <li><p>Full Features</p></li>
+                <li><p>Free support all year round</p></li>
+                <li><p>Free remote training</p></li>
+                <li><p>Unlimited storage</p></li>
+                <li><p>Unlimited users</p></li>
+              </ul>
+              <div style="text-align: center">
+                <button class="custom-btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accountant section -->
+    <section id="accountant" class="block-section accountant-section">
+      <h2 class="container">Accountant section</h2>
+      <div class="grid-two-section">
+        <div>
+          <img src="/public/plans.svg" alt="Alternate Text" width="538px" />
+        </div>
+        <div>
+          <h2>
+            Our accounting web-based application is tailored to help you succeed
+          </h2>
+          <p>
+            Being a bookkeeper or accountant can be tough. Streamlining
+            workflows, making client data accessible anywhere, & freeing up time
+            so you can dedicate that time to high-value & profitable activities
+            will ease your tasks. DynamicERP Online will help you accomplish all
+            of this.
+          </p>
+          <h3>In any location, on any schedule</h3>
+          <p>
+            Access all your client's books anywhere, anytime, and streamline
+            productivity for both you & your client.
+          </p>
+          <h3>Ensure your security</h3>
+          <p>
+            We use high-tech security measures to protect the information of our
+            clients.
+          </p>
+          <h3>Continuity of service with no charge</h3>
+          <p>
+            Stay up to date on your books by pairing them with your bank and
+            favorite apps.
+          </p>
+        </div>
+      </div>
+
+      <div class="erp-analytical">
+        <div class="grid-two-section">
+          <div>
+            <h2>Have you experienced DynamicERP Online yet?</h2>
+            <a href="#demoForm"><button class="custom-btn">Request A Demo</button></a>
+          </div>
+          <div>
+            <img
+              src="/public/monitorBackground.svg"
+              alt="erp-business-alalytical"
+              width="250px"
+              height="200px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-two-section right-side">
+        <div>
+          <h2>
+            Provide clients with financial information about income, resources,
+            and expenses
+          </h2>
+          <p>
+            Monitoring the cost of a project is so easy with DynamicERP Online
+            projects. It's easy to keep track of project costs revenue,
+            duration, and resources. Tracking the expenses of everyone involved
+            in a project can ensure that all costs have beeincurred.Your clients
+            can use the materials report to track the cost of parts, supplies,
+            and other tangible assets. It is essential to factor in their fixed
+            practices when projecting costs in order to maintain project
+            profitability.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/public/plans.svg"
+            alt="plans image 2"
+            width="250px"
+            height="200px"
+          />
+        </div>
+      </div>
+
+      <div class="grid-two-section">
+        <div>
+          <img
+            src="/public/plans.svg"
+            alt="plans image 2"
+            width="250px"
+            height="200px"
+          />
+        </div>
+        <div>
+          <h2>Inform others about valuable insights</h2>
+          <p>
+            Take advantage of DynamicERP online to access financial data and
+            accountingreports in an instant. Your business decisions are always
+            in the right hands with smart insights available at a click. With
+            powerful reporting, you can view sales data by client, product,
+            assignment, or region. Your customers need the right data to conduct
+            successful business. Graphs and dashboards are used to present data
+            in real-time. This provides a thorough overview of revenue and
+            expenses throughout the year.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-two-section right-side">
+        <div>
+          <h2>
+            You can accelerate your productivity with a variety of additional
+            apps
+          </h2>
+          <p>
+            You can enhance the accounting processes of your practice or client
+            with DynamicERP third-party integrations. Your technology solution
+            can be enhanced effortlessly with the extensive selection of apps.
+            In addition to accounting, supply chain management, expenditures,
+            human resource management, and sales, the apps offer a variety of
+            benefits.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/public/plans.svg"
+            alt="plans image 2"
+            width="250px"
+            height="200px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- support details  -->
+    <section id="support" class="block-section container">
+      <div>
+        <h2>Location Wise Sales & Support Details</h2>
+      </div>
+
+      <div class="support-details">
+        <div class="support-header">
+          <h3>Location</h3>
+          <h3>Sales</h3>
+          <h3>Support</h3>
+        </div>
+        <ul class="support-body">
+          <li>Kathmandu</li>
+          <li>01-422826</li>
+          <li>01-422826</li>
+        </ul>
+        <ul class="support-body">
+          <li>Butwal</li>
+          <li>01-422826</li>
+          <li>01-422826</li>
+        </ul>
+        <ul class="support-body">
+          <li>Birgunj</li>
+          <li>01-422826</li>
+          <li>01-422826</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Demo form -->
+
+    <section
+      id="demoForm"
+      class="block-section erp-analytical"
+      style="margin-bottom: 4rem"
+    >
+      <div class="container demo-form-container">
+        <form class="request-demo-form">
+          <div>
+            <h3>Demo Request Form</h3>
+            <div class="demo-form-1st-part">
+              <input type="text" id="name" name="name" placeholder="Name" />
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+              />
+              <input
+                type="text"
+                id="designation"
+                name="designation"
+                placeholder="Designation"
+              />
+            </div>
+            <div class="demo-form-2nd-part">
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+              />
+
+              <div>
+                <p>
+                  Are you using any accounting ERP ( Enterprise Resource
+                  Planning) already ?
+                </p>
+                <input
+                  type="radio"
+                  id="erp-yes"
+                  name="erp-yes"
+                  value="yes"
+                /><label style="font-size: 1.5rem">Yes</label>
+                <input
+                  type="radio"
+                  id="erp-no"
+                  name="erp-no"
+                  value="no"
+                /><label style="font-size: 1.5rem">No</label>
+              </div>
+              <textarea rows="4" placeholder="message"></textarea>
+              <button type="submit" class="custom-btn">Send A Request</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <img
+            src="/public/demo-request-img1.png"
+            alt=" demo-request-img"
+            width="500px"
+            height="200px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="block-section" style="margin-bottom: 4rem">
+      <div class="container contact-container">
+        <form class="request-demo-form">
+          <div>
+            <h3>Drop a message</h3>
+            <div class="demo-form-1st-part">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Organisation Name"
+              />
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+              />
+              <input
+                type="text"
+                id="pan no."
+                name="pan no."
+                placeholder="Pan No."
+              />
+            </div>
+            <div class="demo-form-2nd-part">
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+              />
+              <textarea rows="4" placeholder="message"></textarea>
+              <button type="submit" class="loginbtn">Send</button>
+            </div>
+          </div>
+        </form>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113710.3649544602!2d84.79061029313621!3d27.047574846702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39935446b21c98cb%3A0x42938e30ff4f6cb5!2sBirgunj!5e0!3m2!1sen!2snp!4v1688321691444!5m2!1sen!2snp"
+          width="600"
+          height="350"
+          style="border: 1px; box-shadow: 1px 1px 1px -1px rgb(13, 151, 214)"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="block-section">
+      <div class="footer-section">
+        <div class="profile">
+          <img
+            src="/public/dynamic-erp-white-logo.svg"
+            alt="dynamicerp logo"
+            width="200"
+            height="50"
+          />
+          <p>
+            DynamicERP's invoice acquisition software. Your individual follow-up
+            emails can all be sent with DynamicERP.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick links</h3>
+          <div>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#plans">Plans</a></li>
+              <li><a href="#accountant">Accountant</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div>
+          <h3>Features</h3>
+          <div>
+            <ul>
+              <li><a href="#">Creating invoices</a></li>
+              <li><a href="#">Amounts incurred</a></li>
+              <li><a href="#">Banking & Funds</a></li>
+              <li><a href="#">Stocks</a></li>
+              <li><a href="#">Latest Insights</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div>
+          <h3>Help</h3>
+          <div>
+            <ul>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3>Information</h3>
+          <div>
+            <ul>
+              <li><a href="#"> +977-9801087091</a></li>
+              <li><a href="#"> info@pivotalerp.app</a></li>
+              <li><a href="#"> Birgunj Parsa, Nepal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-section">
+        <p>© Copyright 2022, DynamicERP</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
